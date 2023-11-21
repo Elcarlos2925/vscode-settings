@@ -1,0 +1,61 @@
+class Tabla():
+    def __init__(self):
+        self.v=0
+        self.r=0
+    def calcular(self):
+
+        print(f"1 * {self.v} = {self.r} ")
+        print(f"2 * {self.v} = {self.r} ")
+        print(f"3 * {self.v} = {self.r} ")
+        print(f"4 * {self.v} = {self.r} ")
+        print(f"5 * {self.v} = {self.r} ")
+        print(f"6 * {self.v} = {self.r} ")
+        print(f"7 * {self.v} = {self.r} ")
+        print(f"8 * {self.v} = {self.r} ")
+        print(f"9 * {self.v} = {self.r} ")
+        print(f"10 * {self.v} = {self.r} ")
+
+#imprimir tablas
+tabla_choice=[1,2,3,4,5,6,7,8,9,10]
+
+tabla=Tabla()
+
+tabla.v=1
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=2
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=3
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=4
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=5
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=6
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=7
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=8
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=9
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+
+tabla.v=10
+print(f"Tabla del {tabla.v}")
+tabla.calcular()

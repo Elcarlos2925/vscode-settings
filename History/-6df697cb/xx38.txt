@@ -1,0 +1,30 @@
+CREATE VIEW biblioteca AS
+SELECT
+libros.id AS libro_id,
+libros.titulo,
+autores.nombre AS autor,
+libros.editorial,
+libros.año,
+prestamos.usuario AS prestamo_usuario,
+prestamos.fecha_prestamo AS fecha_prestamo
+FROM libros
+INNER JOIN autores ON libros.id_autor = autores.id
+LEFT JOIN prestamos ON libros.id = prestamos.libro_id;
+
+CREATE VIEW zapateria AS
+SELECT
+Caballero.id AS caballero_id,
+Caballero.titulo,
+autores.nombre AS autor,
+libros.editorial,
+libros.año,
+prestamos.usuario AS prestamo_usuario,
+prestamos.fecha_prestamo AS fecha_prestamo
+FROM libros
+INNER JOIN autores ON libros.id_autor = autores.id
+LEFT JOIN prestamos ON libros.id = prestamos.libro_id;
+
+
+
+
+id-libro        titulos-libro       autor       editorial       año

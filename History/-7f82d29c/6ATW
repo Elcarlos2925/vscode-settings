@@ -1,0 +1,188 @@
+"""
+0 --->  5   last in first out ## LIFO 
+0 --->  4
+0 --->  3
+0 --->  2
+0 --->  1   first in last out ## FILO
+
+
+#"Ray"# , #"Jhon Wick"#, #"Tony Stark"#, #"Natasha Romanof"#, #"Bruce Banner"#, "Elena Banner"
+
+# pila.pop() -- Extraer Elementos de la pila
+# pila.push() -- Ingresar Elementos a la pila
+p 
+T "Elena Banner"    --->    "Bruce Banner"  last in first out ## LIFO 
+  "Natasha Romanof" --->  
+  "Tony Stark"      --->  
+  "Jhon Wick"       --->  
+B "Ray"             --->     first in last out ## FILO
+
+1. Declarar La Pila -- Esta puede ser un array(lista) con el numero de elementos
+   que se necesiten, generalmente las pilas almacenan un tipo de dato, algunas pueden
+   mezclar los tipos de datos
+
+2. Declara los punteros, Top, Button, Pointer, para controlar el flujo de la pila
+
+3. Crear los metodos Push, Pop, Peek, Read, Empty, para controlar el flujo de datos 
+   en la pila
+4. Ingresar y extraer datos de la pila, cumpliendo las reglas del funcionamiento
+
+
+#       # 0  1  2  3  4 
+# pila = [0, 0, 0, 0, 0] # Pila con 5 espacios para ingresar elementos numericos
+#     #   b            t
+#     #   p
+
+indice= 0
+p = 0
+pila["AC/DC"]
+
+"""
+
+from ast import While
+import random
+
+
+class Pila(object):
+    def __init__(self) -> None:
+        self.pila = [0, 0, 0, 0, 0]
+        self.t = len(self.pila)
+        self.b = 0
+        self.p = 0
+
+
+    def push(self, element):
+        if self.p>=self.t:
+            print("Full Stack")
+            self.p -= 1
+        else:
+            if self.pila[self.p]!=0:
+                print("Indice no Disponible o Pila Llena!")
+            else:
+                print(f"valor de p:{self.p}")
+                self.pila[self.p] = element
+                self.p += 1
+
+    def pop2(self):
+        if (self.p<=self.b) and (self.pila[self.p]==0):
+                print("Empty Stack")
+        else:
+            self.pila[self.p] = 0
+            self.p -= 1
+            if self.p<0:
+                self.p += 1
+                print("Empty Stack")
+
+    def peek(self):
+        elemento = ""
+        print(f"P:{self.p}")
+
+        if (self.p>=4) and (self.pila[self.p]!=0):
+            elemento = self.pila[self.p]
+        elif (self.pila[self.p]!=0):
+            elemento = self.pila[self.p]
+        elif self.pila[self.p-1]!=0:
+            elemento = self.pila[self.p-1]
+        else:
+            print("Empty Stack!")
+        return elemento
+
+## PRUEBAS ##
+pila_choice = ["AC/DC", "RAMSTEIN", "METALLICA", "SCORPIONS", "CAIFANES", "TIERRA SANTA", "HEROES DEL SILENCIO"]
+
+
+stack = Pila()
+
+print(f"Longitud de la Pila: {stack.t}")
+stack.push(random.choice(pila_choice))
+print(f"Elementos en la Pila: {stack.pila}")
+print(f"Puntero de la Pila: {stack.p}")
+
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+
+
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+
+print(f"Elemento el tope actual de la pila: {stack.peek()}")
+
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+e = random.choice(pila_choice)
+stack.push(e)
+print(e)
+print(stack.pila)
+print(stack.p)
+
+print(f"Elemento el tope actual de la pila: {stack.peek()}")
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+# ##
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+print(f"Elemento el tope actual de la pila: {stack.peek()}")
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+e = random.choice(pila_choice)
+stack.push(e)
+print(e)
+print(stack.pila)
+print(stack.p)
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+e = random.choice(pila_choice)
+stack.push(e)
+print(e)
+print(stack.pila)
+print(stack.p)
+
+print(f"Elemento el tope actual de la pila: {stack.peek()}")
+
+
+# import random
+
+# for i in range(len(pila)):
+#     element = random.randint(1, 100)
+#     push(element, p)
+#     p += 1
+
+# print(pila)
+

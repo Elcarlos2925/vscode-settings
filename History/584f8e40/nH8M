@@ -1,0 +1,10 @@
+d = {"clave": "valor", 1:2, 2: 1.9, 3: True, "cuatro": [4,5,6], "dics": {"a": 4}}
+
+
+
+
+for clave, valor in d.items():
+    print(clave, valor)
+
+do = dict(name = "ray", city="TJ", age=23)
+print(do)

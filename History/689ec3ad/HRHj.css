@@ -1,0 +1,44 @@
+
+
+
+.ventana-contenedor-principal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.contenedor-flotante{
+    background-color: #EBE6DF;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    height: 80%;
+    width: 50%;
+}
+.img-nom-precio{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
+.titulo-ventana{
+
+}
+.precio-ventana{
+
+}
+.mxn-ventana{
+
+}
+.descripcion-btns{
+
+}
+.descripción-ventana{
+    text-align: justify;
+}
+.btn-fav-car{
+
+}

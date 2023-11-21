@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="Forms-Login" >
+        <a href="../index.html"><img src="img/Logo-White.png" id="Logo"></a>
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <label for="email">Correo Electronico: <span style="color: rgb(170, 56, 56);">*</span></label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su Correo Electronico" required>
+            <br>
+
+            <label for="contraseña">Contraseña: <span style="color: rgb(170, 56, 56);">*</span></label>
+            <div class="contraseña-contenedor">
+                <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$" required >
+                <span toggle="#contraseña" class="eye"></span>
+                <button type="button" onclick="mostrarCondiciones()" class="fas fa-info-circle" id="info-btn"></button>
+            </div>
+            <div id="mensaje-condiciones"></div>
+            <br>
+            <input class="btn" type="submit" value="iniciar sesión">
+            <a href="index.html" class="cambio-form">Registrarse</a>
+
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="scripts/mostrar-ocultar.js"></script>
+<script type="text/javascript" src="scripts/mensajes-contraseña.js"></script>
+</html>

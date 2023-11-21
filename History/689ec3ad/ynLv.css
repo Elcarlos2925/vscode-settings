@@ -1,0 +1,14 @@
+
+
+
+.ventana-contenedor-principal{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.img-nom-precio img{
+    width: 300px;
+    height: auto;
+}

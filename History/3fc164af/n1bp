@@ -1,0 +1,25 @@
+using System;
+
+namespace P1AreaCuadarado
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Declarar variables 
+            int lado = 0, area = 0;
+
+            //Leer datos
+            Console.Write("Cuanto mide lado: ");
+            lado = int.Parse(Console.ReadLine());
+
+            //Calcular area
+            area = lado * 2;
+
+            //Imprimir resultados
+            Console.WriteLine("El resultado de Area es: {0}", area);
+            Console.ReadKey();
+
+        }
+    }
+}

@@ -1,0 +1,39 @@
+using System;
+
+namespace P3_PROGRAMA_PROMEDIO_OUT
+{
+    class Program
+    {
+        static void Promedio(out float promedio)
+        {
+            // declarar variables
+            int NC = 0, Cal = 0, suma = 0;
+            //CALCULAR PROMEDIO
+            Console.Write("Cuantas calificaciones desea registrar: ");
+            NC = int.Parse(Console.ReadLine());
+            for (int i = 0; i < NC; i++)
+            {
+                Console.Write("Dame Calificación {0}: ", i + 1);
+                Cal = int.Parse(Console.ReadLine());
+                suma = suma + Cal;
+            }
+            promedio = suma / NC;
+            suma = 0;
+        }
+        static void Main(string[] args)
+        {
+                float promedio = 0; int opc = 0;
+            do
+            {
+                Promedio(out promedio);
+                Console.WriteLine("El Promedio Es:{0} ", promedio);
+                Console.WriteLine("desea calcular otro promedio 1.si / 2. no");
+                opc = int.Parse(Console.ReadLine());
+                if (opc == 1)
+                {
+                    Console.Clear();
+                }
+            } while (opc == 1);
+        }
+    }
+}

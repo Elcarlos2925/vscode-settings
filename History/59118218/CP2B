@@ -1,0 +1,41 @@
+using System;
+
+namespace _3._Sueldo__con_return_
+{
+    class Program
+    {
+        static float Sueldo_dia()
+        {
+            //declarar variables
+            float sueldo_dia=0;
+            //leer datos
+            Console.Write("dame sueldo diario: ");
+            sueldo_dia = float.Parse(Console.ReadLine());
+            return sueldo_dia;
+        }
+        static void Main(string[] args)
+        {
+            //declarar variables
+            int opc = 0;
+            float Rsueldo_dia=0, sueldo_Sem=0, sueldo_Men=0;
+            Console.WriteLine("Que sueldo desea calcular 1.sueldo semanal / 2.sueldo mensual");
+            opc = int.Parse(Console.ReadLine());
+            Rsueldo_dia = Sueldo_dia();
+            if (opc == 1)
+            {
+                sueldo_Sem = Rsueldo_dia * 7;
+                Console.WriteLine("su sueldo semanal es: {0}", sueldo_Sem);
+            }
+            if (opc == 2)
+            {
+                sueldo_Men = Rsueldo_dia * 30;
+                Console.WriteLine("su sueldo mensual es: {0}", sueldo_Men);
+            }
+            else
+            {
+                Console.WriteLine("opción no valida");
+            }
+
+        }
+    }
+}

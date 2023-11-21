@@ -1,0 +1,86 @@
+from cmath import pi
+import random
+from re import T
+
+class Pila(object):
+     def _init_(self) -> None:
+          self.pila = [0, 0, 0, 0, 0]
+          self.t =len(self.pila)
+          self.b = 0
+          self.p = 0
+          
+
+     def push(self, element):
+          if self.p>self.t:
+               print("Pila llena")
+               self.p -= 1
+          else:     
+               self.pila[self.p] = element
+               self.p += 1
+
+     def pop2(self):       
+          if self.p<self.b:
+               print("Empty Stack")
+          else:     
+              self.pila[self.p] = 0
+              self.p -= 1   
+        
+#PRUEBAS#
+
+pila_choice = ["Alexis", "Odette", "Carlos", "Omar", "Karla"]
+
+stack=Pila()
+stack.push(random.choice(pila_choice))
+print (stack.pila)
+print(stack.p)
+stack.push(random.choice(pila_choice))
+print (stack.pila)
+print(stack.p)
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+e=random.choice(pila_choice)
+stack.push(e)
+print(e)
+print(stack.pila)
+print(stack.p)
+
+stack.pop2()
+print(stack.pila)
+print(stack.p)
+
+stack.push(random.choice(pila_choice))
+print(stack.pila)
+print(stack.p)
+#stack = Pila()
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)
+#e = random.choice(pila_choice)
+#stack.push(e)
+#print(e)
+#print(stack.pila)
+#print(stack.p)
+
+#stack.pop2()
+#print(stack.pila)
+#print(stack.p)
+
+#stack.push(random.choice(pila_choice))
+#print(stack.pila)
+#print(stack.p)

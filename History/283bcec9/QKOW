@@ -1,0 +1,21 @@
+miLista = [1,9,5,4,2,8,3,8,2,10,103]
+
+def quick(lista):
+    izquierda = []
+    centro = []
+    derecha = []
+    if len(lista) > 1:
+        p = lista[0]
+        for i in lista:
+            if i < p:
+                izquierda.append(i)
+            elif i == p:
+                centro.append(i)
+            elif i > p:
+                derecha.append(i)
+        return quick(izquierda)+centro+quick(derecha)
+    else:
+      return lista
+
+print(miLista)
+print(quick(miLista))

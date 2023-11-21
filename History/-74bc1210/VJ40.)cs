@@ -1,0 +1,134 @@
+using System;
+
+namespace P5.Números
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Crear objeto 
+            Números Operación = new Números();//Creamos objeto sin datos
+
+            //Capturar datos de los atributos del objeto
+            Console.Write("Ingrese el valor de número 1: ");//Dar valor a numero 1
+            Operación.Numero1=int.Parse(Console.ReadLine());//almacenar numero 1
+
+            Console.Write("Ingrese el valor de número 2: ");//Dar valor a numero 2
+            Operación.Numero2 =int.Parse(Console.ReadLine());//almacenar numero 2
+
+            Console.Clear();//limpiar pantalla
+
+            int opc = 0;//declarar opc 
+            //Desplegar menú 
+            Console.WriteLine("Que operación desea realizar: \n 1.suma \n 2.resta \n 3.multiplicación \n 4.división\n 5. desplegar el mayor");
+            opc = int.Parse(Console.ReadLine());
+
+            Console.Clear();//limpiar pantalla
+
+            //Ejecutar operación
+            if (opc == 1)
+            {
+                Operación.Suma();
+            }
+            else if (opc == 2)
+            {
+                Operación.Resta();
+            }
+            else if (opc == 3)
+            {
+                Operación.Multiplicación();
+            }
+            else if (opc == 4)
+            {
+                Operación.División();
+            }
+            else if (opc == 5)
+            {
+                Operación.Mayor();
+            }
+            else 
+            {
+                Console.WriteLine("opción no valida");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace P5.Números
+{
+    internal class Números
+    {
+        int Num1;
+        int Num2;   
+
+        //Define propiedades para leer y escribir
+
+        public int Numero1
+        {
+            get { return Num1; }
+            set { Num1 = value; }
+        }
+        public int Numero2
+        {
+            get { return Num2; }
+            set { Num2 = value; }
+        }
+
+        // inicializa constructores
+        public Números()
+        {
+        }
+        //constructor sobrecargado con datos
+        public Números(int n1, int n2)
+        {
+            Num1 = n1;
+            Num2 = n2;
+        }
+        //Definir metodos de la clase
+        public void Suma ()
+        {
+            int suma= 0;
+            suma = Num1 + Num2;
+            Console.WriteLine("El resultado de su suma es {0}", suma);
+        }
+        public void Resta ()
+        {
+            int resta = 0;
+            resta = Num1 - Num2;
+            Console.WriteLine("El resultado de su resta es {0}", resta);
+        }
+        public void Multiplicación()
+        {
+            int multiplicación = 0;
+            multiplicación=Num1 * Num2;
+            Console.WriteLine("El resultado de su multiplicación es {0}", multiplicación);
+        }
+        public void División ()
+        {
+            int división = 0 ;
+            división =Num1/Num2;
+            Console.WriteLine("El resultado de su división es {0}", división);
+        }
+        public void Mayor ()
+        {
+            if (Num1 > Num2)
+            {
+                Console.WriteLine("El mayor es {0}", Num1);
+
+            }
+            else
+            {
+                Console.WriteLine("El mayor es {0}", Num2);
+            }
+        }
+    }
+}

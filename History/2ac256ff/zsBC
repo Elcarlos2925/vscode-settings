@@ -1,0 +1,52 @@
+# Declarar arrays(list)
+
+r = [1, 2, 3, 4, 5]
+
+print(f"Contendio del Array {r}")
+
+# acceso por elemento, en forma manual
+print(f"acceso al elemento con indice 0 {r[0]}")
+
+
+#acceso por elemento de forma iterativa
+for item in r:
+    print(f"elemento: {item}")
+
+# acceso por rango de elementos
+print(r[2:4])
+
+#acesso de elementos por funcion
+print(sum(r))
+print(sum(r[:3]))
+
+#acceso por funcion definida por el usuario
+def regresa_elemento(r, x):
+    return r[x]
+
+print(regresa_elemento(r, 2))
+
+
+# array con elementos heterogeneos
+
+rh = [1, 2, 3, 4.1, 5.2, 6.3, "a", "b", "c", True, False, {1, 2, 3, 3}, [6, 7, 8], {"clave": "valor"}]
+# print del rh
+print(rh)
+
+# iterando rh
+for item in rh:
+    print(item)
+
+#array bidimensional
+
+rb = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(rb)
+print(rb[1][1])
+
+for x in rb:
+    for y in x:
+        print(y)

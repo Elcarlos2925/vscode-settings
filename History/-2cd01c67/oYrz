@@ -1,0 +1,7 @@
+# declarar variables
+ele=0
+NE=0
+
+# Declarar vector
+NE=input(f"Cuantos elementos desea capturar: ")
+print(NE)

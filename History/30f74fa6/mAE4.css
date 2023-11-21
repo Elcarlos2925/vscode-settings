@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Mono&family=Inter:wght@500&family=Nunito:wght@500&family=Poppins:ital,wght@1,200&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.fondo-contenedor{
+    background-color: #342009;
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    border-radius: 40px;
+    padding: 40px;
+    grid-template-rows: 24% 24% 24% 24% 5%;
+}
+
+#renglon1,#renglon2,
+#renglon3,#renglon4{
+    width: 100%;height: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+}
+
+#entre-calles,#especificaciones,#num-ext,#num-int,
+#calle-colonia,#municipio,#estado,#codigo-postal,
+#telefono-contacto,#nomnbre-apellido {
+    width: 100%;height: 100%;
+}
+#renglon1{grid-template-columns: 48% 48%;}
+#renglon2{grid-template-columns: 18% 38% 38%;}
+#renglon3{grid-template-columns: 58% 18% 18%;}
+#renglon4{grid-template-columns: 38% 58%;}
+
+
+.input{
+    width: 100%;height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input input{
+    width: 100%;
+    height: 35px;
+}
+
+.fondo-contenedor label{
+    width: 100%;
+}
+
+#guardar-direccion{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    background-color: #342009;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#info-btn1{
+    font-size: 18px; /* Tamaño del ícono */
+    background-color: rgba(74, 64,53, 1);
+    border: 0;
+    width: 5px;
+    color: #B1995C; /* Color del ícono */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}

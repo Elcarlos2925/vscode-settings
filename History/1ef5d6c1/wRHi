@@ -1,0 +1,47 @@
+from __future__ import division
+class numeros(object):
+    def __init__(self, numero1 = 0, numero2 = 0):
+        self.numero1=numero1
+        self.numero2=numero2
+    def __str__(self):
+        return self.numero1, self.numero2
+
+class operaciones(object):
+    def read_sum(self):
+      n1=self.numero1
+      n2=self.numero2
+      suma=0
+      suma=n1+n2
+      print(f"El resultado de suma es: {suma}")
+    def read_minus(self):
+        n1=self.numero1
+        n2=self.numero2
+        resta=0
+        resta=n1-n2
+        print(f"El resultado de resta es: {resta}")
+    def read_multiply(self):
+        n1=self.numero1
+        n2=self.numero2
+        multiplicación=n1*n2
+        print(f"El resultado de multiplicación es: {multiplicación}")
+    def read_division(self):
+        n1=self.numero1
+        n2=self.numero2
+        division=n1/n2
+        print(f"El resultado de division es: {division}")
+
+operación = operaciones()
+opc=0
+num1=numeros()
+num2=numeros()
+
+num1=input("ingrese numero 1")
+num2=input("ingrese numero 2")
+
+opc=input("Que operación basica desea realizar \n\t 1.Suma \n \t 2. Resta \n \t 3. Multiplicación \n \t 4. Division")
+if(opc==1):
+    operaciones.read_sum()
+
+
+
+

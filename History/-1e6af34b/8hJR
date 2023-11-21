@@ -1,0 +1,42 @@
+"""
+Las listas enlazadas son estructuras no lineales que almacenan informacion en memoria dinamica,
+se utilizan principalmente en la solucion de problemas que implican el uso de arboles, son empleadas
+comunmente en algoritmos de busqueda y ordenamiento. Un ejemplo claro, es el control-z que se utiliza en
+el sistema operativo.
+Las listas contienen, una raiz o base, algunos autores les dicen cabeza de la lista, contienen los nodos
+concecuentes y contiene un final o cola. Ademas utilizamos los punteros p y q para controlar el incremento o 
+decremento de la lista.
+Los metodos son:
+insertar nodo
+eliminar nodo
+leer(recorrer) la lista
+buscar
+"""
+
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.link = None
+
+
+"""
+r; p,q = r;
+r            q p
+R  ------->   A  ->  B  ->  C
+"""
+
+r = Node("Raiz")
+p = r
+q = r
+
+p = Node("A")
+q.link = p
+
+
+print(q.data)
+q = p
+print(q.data)
+
+
+
+

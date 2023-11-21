@@ -1,0 +1,79 @@
+using System;
+
+namespace P5.Rectangulo
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           //Crear objeto
+           Rectangulo rect = new Rectangulo();//Creamos objeto sin datos
+            //Capturar datos de los atributos del objeto
+
+            Console.Write("Ingresa el valor de base: ");//Pedir base
+            rect.Lbase=float.Parse(Console.ReadLine());//almacenar base
+            Console.Write("Ingresa el valor de altura: ");//pedir altura
+            rect.Laltura=float.Parse(Console.ReadLine());//almacenar altura
+
+            Console.Clear();//Limpiar pantalla
+
+            Console.WriteLine("Datos del rectangulo");//Imprimir area y perimetro
+            rect.Perimetro();
+            rect.Area();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace P5.Rectangulo
+{
+    internal class Rectangulo
+    {
+        float Base;
+        float Altura;
+
+        //Define propiedades para poder leer y escribir
+        public float Lbase
+        {
+            get { return Base; }//Propiedad leer
+
+            set { Base = value; }//Propiedad Escribir
+        }
+        public float Laltura
+        {
+            get { return Altura; }//Propiedad leer
+
+            set { Altura = value; }//Propiedad escribir
+        }
+        //Inicializa constructores
+        public Rectangulo()
+        {
+        } 
+        //Constructor sobrecargado con datos
+        public Rectangulo(float b, float h)
+        {
+            Base = b;
+            Altura = h;
+        }
+        //Definir metodos de la clase
+        public void Perimetro ()
+        {
+            float perimetro = 0;//declarar perimetro
+            perimetro = (Base + Altura) * 2;//calcular perimetro
+            Console.WriteLine("    Perimetro={0}",perimetro);
+        }
+        public void Area ()
+        {
+            float area = 0;//declrar area
+            area = Base * Altura;//calcular area
+            Console.WriteLine("    Area={0}", area);
+        }
+    }
+}

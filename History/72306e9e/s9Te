@@ -1,0 +1,27 @@
+class Tablas():
+    def __init__(self):
+        self.v=0
+        self.r=0
+    def calcular(self):
+        self.tx1=(1 * self.v)
+        self.tx2=(2 * self.v)
+        self.tx3=(3 * self.v)
+        self.tx4=(4 * self.v)
+        self.tx5=(5 * self.v)
+        self.tx6=(6 * self.v)
+        self.tx7=(7 * self.v)
+        self.tx8=(8 * self.v)
+        self.tx9=(9 * self.v)
+        self.tx10=(10 * self.v)
+        self.t1=[(self.tx1),self.tx2,self.tx3,self.tx4,self.tx5,self.tx6,self.tx7,self.tx8,self.tx9,self.tx10]
+# sumar todos los resultados
+tabla=Tablas()
+
+tabla.v=1
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1())
+
+
+
+

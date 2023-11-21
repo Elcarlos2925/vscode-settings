@@ -1,0 +1,4 @@
+# declarar variables
+ele=34
+NE=0
+print (f"ele")

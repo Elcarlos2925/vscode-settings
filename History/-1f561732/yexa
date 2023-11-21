@@ -1,0 +1,122 @@
+class Node(object):
+    def __init__(self, data=None, link=None):
+        self.data = data
+        self.link_izq = link
+        self.link_der = link
+
+    def __str__(self):
+        return self.data
+
+
+
+class arbol_simple(object):
+    def __init__(self):
+        self.raiz = None
+        self.hoja = None
+
+    def add_node_izq(self, nodo):
+        if self.raiz==None:
+            self.raiz = nodo
+        if self.hoja!=None:
+            self.hoja.link_izq = nodo
+        self.hoja = nodo
+
+
+    def read_izq(self):
+        p = self.raiz
+        while p.link_izq != None:
+            print(p.data)
+            p = p.link_izq
+
+    def add_node_der(self, nodo):
+        if self.raiz==None:
+            self.raiz = nodo
+        if self.hoja!=None:
+            self.hoja.link_der = nodo
+        self.hoja = nodo
+
+    def read_der(self):
+        p = self.raiz
+        while p != None:
+            print(p.data)
+            p = p.link_der
+        if p == None:
+            print("tienes razon")
+
+
+
+arbol = arbol_simple()
+
+node = Node(1)
+node2 = Node(2)
+arbol.add_node_izq(node)
+arbol.add_node_izq(node2)
+
+node = Node(7)
+node2 = Node(8)
+arbol.add_node_izq(node)
+arbol.add_node_izq(node2)
+
+node = Node(5)
+node2 = Node(6)
+arbol.add_node_izq(node)
+arbol.add_node_izq(node2)
+
+node = Node(3)
+node2 = Node(4)
+arbol.add_node_izq(node)
+arbol.add_node_izq(node2)
+
+print("\n--->Izquierda")
+arbol.read_izq()
+print("\n--->Derecha")
+
+node = Node(11)
+node2 = Node(22)
+arbol.add_node_der(node)
+arbol.add_node_der(node2)
+
+node = Node(71)
+node2 = Node(82)
+arbol.add_node_der(node)
+arbol.add_node_der(node2)
+
+node = Node(51)
+node2 = Node(62)
+arbol.add_node_der(node)
+arbol.add_node_der(node2)
+
+node = Node(31)
+node2 = Node(42)
+arbol.add_node_der(node)
+arbol.add_node_der(node2)
+
+arbol.read_der()
+
+
+
+# node = Node(1)
+
+# print(node.data)
+
+# r= node
+# p=r
+# q=r
+
+# p = Node(2)
+# q = Node(3)
+
+# r.link_izq = p
+# r.link_der = q
+
+# print(p.data)
+# print(q.data)
+
+# p=r
+# q=r
+
+# print(q.data)
+# q = p.link_izq
+# print(q.data)
+# p = r.link_der
+# print(p.data)

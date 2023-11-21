@@ -1,0 +1,35 @@
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (23, 'Base de datos', '77','megan', 67);
+INSERT 0 1
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (93, 'matematicas', '90','megan', 88);
+INSERT 0 1
+postgres=# SELECT * FROM libros;
+////// Insertamos en la tabla autores
+postgres=# INSERT INTO autores (id, nombre)
+postgres-# VALUES (23,'Juan');
+INSERT 0 1
+postgres=# INSERT INTO autores (id, nombre)
+VALUES (12,'JuanCarlos');
+postgres=# SELECT * FROM autores;
+////// Insertamos en la tabla prestamos
+postgres=# INSERT INTO prestamos (id, libro_id, usuario, fecha_prestamo)
+VALUES (34, 66, 'Armando', '2023-10-04');
+postgres=# INSERT INTO prestamos (id, libro_id, usuario, fecha_prestamo)
+VALUES (11, 36, 'Pedro', '2023-10-04');
+postgres=# SELECT * FROM prestamos;
+Creamos una vista para La TRANSPARENCIA DE DATOS donde los usuarios no
+necesitan preocuparse por la ubicación exacta de los datos ni por la
+forma en que están distribuidos.
+postgres=# CREATE VIEW biblioteca AS
+SELECT
+libros.id AS libro_id,
+libros.titulo,
+autores.nombre AS autor,
+libros.editorial,
+libros.año,
+prestamos.usuario AS prestamo_usuario,
+prestamos.fecha_prestamo AS fecha_prestamo
+FROM libros
+INNER JOIN autores ON libros.id_autor = autores.id
+LEFT JOIN prestamos ON libros.id = prestamos.libro_id;

@@ -1,0 +1,19 @@
+class Tabla():
+
+    def calcular(self):
+        self.v=0
+        tabla.v=self.v
+        print=(1 * self.v)
+        print=(2 * self.v)
+        print=(3 * self.v)
+        print=(4 * self.v)
+        print=(5 * self.v)
+        print=(6 * self.v)
+        print=(7 * self.v)
+        print=(8 * self.v)
+        print=(9 * self.v)
+        print=(10 * self.v)
+
+tabla=Tabla
+
+tabla.calcular

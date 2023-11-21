@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@500&family=Poppins:wght@600&display=swap');
+/*===========================Fuentes===========================*/
+
+/*===========================Nav-Bar===========================*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header{
+    background-color: #644A3C;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .nav-logo {
+cursor: pointer;
+margin-right: 15px;
+}
+
+.header .nav-nombre h2{
+    font-family: 'Abril fatface', cursive;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header .nav-nombre h2:hover{
+transform: scale(1.1);
+color: #dbb144;
+}
+.header .nav-logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .nav-logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.header .nav-links li:hover,
+.overlay a:hover{
+    transform: scale(1.1);
+}
+
+
+.header .nav-links a{
+    font-size: 17px;
+    color: #fff;
+}
+
+.header .nav-links li a:hover{
+    color: #dbb144;
+}
+
+.header .btn button,
+.header .menu button{
+    font-weight: 700;
+    color: #fff;
+    background-color: #B1995C;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.menu {
+    display:none;
+}
+
+.header .btn button:hover,
+.header .menu button:hover{
+    background-color: #EBE6DF;
+    color: #644A3C;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:800px) {
+    .nav-links, .btn, .car-shop{
+        display: none;
+    }
+    .nav-logo, .nav-nombre{
+        display: flex;
+    justify-content:space-between;
+    align-items: center;
+    }
+    .menu{
+        display: inherit;
+        margin-left: auto;
+    }
+}
+
+.header .car-shop button,
+.header .menu button{
+    background-color: #644A3C;
+    border: 0;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.header .car-shop button:hover,
+.header .menu button:hover{transform: scale(1.2);}
+
+.header .btn, .header .car-shop {
+    margin-left: auto;
+}
+
+/*===========================Nav-Bar===========================*/
+
+/*===========================Nav-bar-manu===========================*/
+.header a{
+    text-decoration:none;
+}
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #342009;
+    opacity: 98%;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-size: 700;
+    color: #fff;
+}
+
+.header .overlay a:hover, .header .overlay a:focus{
+    color: #dbb144;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top:20px;
+    right: 45px;
+    font-size: 65px;
+}
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 17px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/*===========================Nav-bar-manu===========================*/
+
+
+/*===========================galeria expandible===========================*/
+.galeria {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+    .galeria img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: brightness(80%);
+        transition: .7s ease;
+    }
+
+.galeria img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+/*===========================galeria expandible===========================*/
+
+
+
+/*===========================Contenedor de Productos===========================*/
+.productos { /*Coffee*/
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en el ancho del contenedor */
+    justify-content: space-around;
+}
+/*===========================Contenedor de Productos===========================*/

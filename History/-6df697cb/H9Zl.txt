@@ -1,0 +1,23 @@
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (23, &#39;Base de datos&#39;, &#39;77&#39;,&#39;megan&#39;, 67);
+INSERT 0 1
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (93, &#39;matematicas&#39;, &#39;90&#39;,&#39;megan&#39;, 88);
+INSERT 0 1
+postgres=# SELECT * FROM libros;
+////// Insertamos en la tabla autores
+postgres=# INSERT INTO autores (id, nombre)
+postgres-# VALUES (23,&#39;Juan&#39;);
+INSERT 0 1
+postgres=# INSERT INTO autores (id, nombre)
+VALUES (12,&#39;JuanCarlos&#39;);
+postgres=# SELECT * FROM autores;
+////// Insertamos en la tabla prestamos
+postgres=# INSERT INTO prestamos (id, libro_id, usuario, fecha_prestamo)
+VALUES (34, 66, &#39;Armando&#39;, &#39;2023-10-04&#39;);
+postgres=# INSERT INTO prestamos (id, libro_id, usuario, fecha_prestamo)
+VALUES (11, 36, &#39;Pedro&#39;, &#39;2023-10-04&#39;);
+postgres=# SELECT * FROM prestamos;
+Creamos una vista para La TRANSPARENCIA DE DATOS donde los usuarios no
+necesitan preocuparse por la ubicación exacta de los datos ni por la
+forma en que están distribuidos.

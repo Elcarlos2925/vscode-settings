@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Forms-Login">
+        <a href="../index.html"><img src="Logo-White.png" id="Logo"></a>
+        <h2>Crear Cuenta</h2>
+        <form>
+            <label for="nombre">Nombre: <span style="color: red;">*</span></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" required>
+            <br>
+            <label for="apellido">Apellidos: <span style="color: red;">*</span></label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese sus Apellidos" pattern="[A-Za-z\s]+" title="Solo se permiten letras y espacios" required>
+            <br>
+            <label for="email">Correo Electronico: <span style="color: red;">*</span></label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su Correo Electronico" required>
+            <br>
+            <label for="contraseña">Contraseña: <span style="color: red;">*</span></label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$" required>
+            <br>
+            <label for="verificar-contraseña">Verificar Contraseña: <span style="color: red;">*</span></label>
+            <input type="password" name="verificar-contraseña" id="verificar-contraseña" placeholder="Ingrese su Contraseña"  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{8,}$" required>
+            <br>
+            <input class="btn" type="submit" value="Registrarse">
+
+            <a href="sign-in.html" class="iniciar-sesion">¿Ya tienes una cuenta?</a>
+        </form>
+    </div>
+</body>
+</html>

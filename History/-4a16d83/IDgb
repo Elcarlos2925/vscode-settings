@@ -1,0 +1,59 @@
+import random
+class Tabla():
+
+    def calcular(self):
+        self.v=0
+        print=(1 * self.v)
+        print=(2 * self.v)
+        print=(3 * self.v)
+        print=(4 * self.v)
+        print=(5 * self.v)
+        print=(6 * self.v)
+        print=(7 * self.v)
+        print=(8 * self.v)
+        print=(9 * self.v)
+        print=(10 * self.v)
+
+#imprimir tablas
+
+tabla=Tabla()
+
+tabla.v=1
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=2
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=3
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=4
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=5
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=6
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=7
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=8
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=9
+print(f"Tabla del {tabla.v}")
+tabla.calcular
+
+tabla.v=10
+print(f"Tabla del {tabla.v}")
+tabla.calcular

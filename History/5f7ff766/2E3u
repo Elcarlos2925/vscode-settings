@@ -1,0 +1,25 @@
+using System;
+
+namespace P4_Saludo_return
+{
+    class Program
+    {
+        static string Name()
+        {
+            string name = " ";
+            //Leer datos
+            Console.Write("dame nombre: ");
+            name = Console.ReadLine();
+
+            return name;
+        }
+        static void Main(string[] args)
+        {
+            //declarar variables
+            string Rname = " ";
+            Rname = Name();
+            //imprimir saludo 
+            Console.Write("Hola {0}, Que Tengas Un Excelente Dia",Rname);
+        }
+    }
+}

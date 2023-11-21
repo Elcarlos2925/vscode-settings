@@ -1,0 +1,85 @@
+from platform import node
+
+
+class Node(object):
+    def __init__(self, data=None, link=None):
+        self.data = data
+        self.linkIzquierda=link
+        self.linkDerecha=link
+
+    def __str__(self):
+        return self.data
+
+class Lista_simple(object):
+    def __init__(self):
+        self.raiz = None
+        self.cola = None
+
+    def add_node(self, nodo):
+        if self.raiz==None:
+            self.raiz = nodo
+        if self.cola!=None:
+            self.cola.linkDerecha = nodo
+            self.cola.linkIzquierda = nodo
+        self.cola = nodo
+    def read(self):
+        r=self.raiz
+        p=self.raiz
+        q=self.raiz
+        print(f"r={r.data}")
+        p=p.linkDerecha
+        print(f"p={p.data}")
+        print(f"q={q.data}")
+        while q.linkDerecha!=None:
+            print(q.data)
+            q=q.linkDerecha
+        """""
+        while q.linkDerecha!=None:
+            print(q.data)
+            q=q.linkDerecha
+        if q.linkDerecha==None:
+            print(q.data)
+        print("---")
+        q.linkIzquierda=p
+        while q.linkIzquierda!=None:
+            print(q.data)
+            q.linkIzquierda=r
+            q=q.linkIzquierda
+        if q.linkIzquierda==None:
+            print(q.data)
+            """
+data_choice = ["1", "2", "3"]
+ls = Lista_simple()
+
+for band in data_choice:
+    node = Node(band)
+    ls.add_node(node)
+
+ls.read()
+
+
+"""""
+node = Node(1)
+r=node
+p=r
+q=r
+p=p.linkDerecha
+p=Node(2)
+q=q.linkDerecha
+q=Node(3)
+p.linkIzquierda=r
+q.linkIzquierda=p
+print(r.data)
+print(p.data)
+print(q.data)
+print("---")
+print(q.data)
+q=q.linkIzquierda
+print(q.data)
+q.linkIzquierda=r
+q=q.linkIzquierda
+print(q.data)
+"""
+
+
+

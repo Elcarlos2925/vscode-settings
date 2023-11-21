@@ -1,0 +1,116 @@
+from multiprocessing.connection import deliver_challenge
+from platform import node
+
+
+class Node(object):
+    def __init__(self, data=None, link=None):
+        self.data = data
+        self.linkIzquierda=link
+        self.linkDerecha=link
+
+    def __str__(self):
+        return self.data
+
+class Lista_simple(object):
+    def __init__(self):
+        self.raiz = None
+        self.cola = None
+
+    def add_node(self, nodo):
+        if self.raiz==None:
+            self.raiz = nodo
+        if self.cola!=None:
+            self.cola.linkDerecha = nodo
+            self.cola.linkIzquierda = nodo
+        self.cola = nodo
+
+##########################################
+    def read(self):
+        q = self.raiz
+        while q.linkDerecha != None:
+           print(q.data)
+           q=q.linkDerecha
+        if q.linkDerecha == None:
+            print(q.data)
+        print("---->")
+        while q.linkIzquierda != None:
+            print(q.data)
+            q = q.linkIzquierda
+        if q.linkIzquierda == None:
+            print(q.data)
+
+    def find_node(self, dato, find_data = False):
+        p = self.raiz
+        while find_data == False and p.linkDerecha != None:
+            if p.data==dato:
+                print(f"Dato: {dato} encontrado!")
+                find_data = True
+            p = p.linkDerecha
+            p = p.linkIzquierda
+
+    def left_add(self, dato, band, find_data=False):
+        print("#####")
+        p = self.raiz
+        q = self.raiz
+        r = self.raiz
+        while find_data == False and p.linkIzquierda != None:
+            print("$$$$$")
+            print(p.data)
+            if p.data==dato:
+                print("/////")
+                print(f"Dato: {dato} encontrado!")
+                find_data = True
+                r = Node(band)
+                q.linkDerecha = r
+                r.linkDerecha = p
+            else:
+                print("%&&&&")
+                q = p
+
+            p = p.linkDerecha
+            p = p.linkIzquierda
+
+    def right_add(self, dato):
+        p = self.raiz
+        q = self.raiz
+        r = self.raiz
+        while find_data == False or p.link != None:
+            if p.data==dato:
+                print(f"Dato: {dato} encontrado!")
+                find_data = True
+            p = p.linkDerecha
+            p = p.linkIzquierda
+        q = p.linkDerecha
+        q = q.linkIzquierda
+
+
+
+
+
+data_choice = ["1", "2", "3", "4", "5", "6", "7"]
+ls = Lista_simple()
+
+
+for band in data_choice:
+    node = Node(band)
+    ls.add_node(node)
+
+ls.read()
+
+Link=input("a que lado desea agregar un nodo")
+
+ls.left_add()
+
+ls.right_add()
+
+"""
+ls.read()
+
+banda = str(input("Escribe la banda que deseas buscar: "))
+ls.find_node(banda.upper())
+
+dato = str(input("Escribe la banda donde quieres insertar un nodo a la izquierda: "))
+banda = str(input("Escribe la banda que deseas buscar: "))
+ls.left_add(dato.upper(), banda.upper())
+ls.read()
+"""

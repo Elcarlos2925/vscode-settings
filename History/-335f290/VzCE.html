@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón Activado/Desactivado</title>
+</head>
+<body>
+
+<button id="miBoton">Haz clic en mí</button>
+
+<script>
+    // Desactivar el botón cuando se carga la página
+    document.getElementById("miBoton").disabled = true;
+
+    // Activar el botón cuando se hace clic en otro elemento (por ejemplo, un botón de "Activar")
+    function activarBoton() {
+        document.getElementById("miBoton").disabled = false;
+    }
+</script>
+
+<button onclick="activarBoton()">Activar Botón</button>
+
+</body>
+</html>

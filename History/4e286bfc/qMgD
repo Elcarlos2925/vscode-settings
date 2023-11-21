@@ -1,0 +1,24 @@
+#declarar la pila: esta puede ser un array(lista) con el numeros de elementos que se necesiten, generalmente las pilas almacenan un ipo de dato, algunos 
+
+#declara los punteros top, nutton, pointer, para controlar el flujo de la
+
+#crear los metodas push, pop, peek, read,  empty para controlar el flujo de 
+
+
+
+#     1 2 3 4 5
+from xml.dom.minidom import Element
+
+
+pila=[0,0,0,0,0]#pila con 5 espacios para ingresar elementos numericos
+#     b       t
+#     p
+b=0
+p=0
+t=0
+element=90
+def push(element):
+    pila[p,element]
+    p + 1
+
+print (pila)    

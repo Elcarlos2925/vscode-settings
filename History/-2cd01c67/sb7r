@@ -1,0 +1,22 @@
+from array import array
+from hashlib import new
+from turtle import clear
+
+# declarar variables
+ele=0
+NE=0
+
+# Declarar vector
+NE=input(f"Cuantos elementos desea capturar: ")
+array[NE]
+
+#Alamacenar vector
+for i in (len(NE)):
+    ele=input(f"Ingresa elemento {0} ", i+1)
+    array [i]=ele
+#imprimir vector
+clear
+for i in (len(NE)):
+    ele=array[i]
+    print(f"El elemento {0} es: {1}", i+1, ele)
+

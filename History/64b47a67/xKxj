@@ -1,0 +1,35 @@
+""""""""""
+from array import array
+import random
+class Ordenamiento_Burbuja(object):
+    def __init__(self):#METODO ALMACENAMIENTO DE DATOS
+        self.lista = []
+    def add(self):#METODO AGREGAR ELEMENTO
+        item=random.randint(1, 100)
+        self.lista.append(item)
+       # print(self.lista)
+    def _str_(self):
+        return self.lista
+"""
+import random
+def Burbuja(array):
+    length=len(array)
+    print(length-1)
+    array.lista = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    for i in range(length):
+        item=random.randint(1, 100)
+        array.lista.append(item)
+    print(f"\t\t\t <<<LISTA DE ELEMENTOS>>>\n{lista}")
+
+    for i in range(0,length):#puntero
+        for j in range(0, length):#intercambio
+            print(array)
+            if array[j] > array [j+1]:
+                aux=array[j]
+                array [j]=array[j+1]
+                array[j+1]=aux
+    return array
+
+
+Burbuja()
+

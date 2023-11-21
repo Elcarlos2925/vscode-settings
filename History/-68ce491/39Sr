@@ -1,0 +1,56 @@
+from platform import node
+
+
+class Node(object):
+    def __init__(self, data=None, link=None):
+        self.data = data
+        self.linkIzquierda=link
+        self.linkDerecha=link
+
+    def __str__(self):
+        return self.data
+
+
+class Lista_simple(object):
+    def __init__(self):
+        self.raiz = None
+        self.cola = None
+
+    def add_node(self, nodo):
+        if self.raiz==None:
+            self.raiz = nodo
+        if self.cola!=None:
+            self.cola.linkDerecha = nodo
+            self.cola.linkIzquierda = nodo
+        self.raiz=nodo
+        self.cola = nodo
+
+    def read(self):
+        q = self.raiz
+        while q.linkDerecha != None:
+           print(q.data)
+           q=q.linkDerecha
+        if q.linkDerecha == None:
+            print(q.data)
+        print("-------")
+        q=self.cola
+        if q.linkIzquierda==None:
+            print(q.data)
+            q = q.linkIzquierda
+        while q.linkIzquierda != None:
+            print(q.data)
+            q = q.linkIzquierda
+        if q.linkIzquierda == None:
+            print(q.data)
+
+data_choice = ["1", "2", "3", "4", "5", "6", "7"]
+ls = Lista_simple()
+
+for band in data_choice:
+    node = Node(band)
+    ls.add_node(node)
+
+ls.read()
+
+
+

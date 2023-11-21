@@ -1,0 +1,25 @@
+def sum (num1, num2):
+    suma=num1+num2
+    print(suma)
+def rest (num1, num2):
+    suma=num1+num2
+    print(suma)
+def mult (num1, num2):
+    suma=num1+num2
+    print(suma)
+def div (num1, num2):
+    suma=num1+num2
+    print(suma)
+
+numero_1=int(input("ingrese el valor asignado al numero 1: "))
+numero_2=int(input("ingrese el valor asignado al numero 2: "))
+
+menu=int(input("Que operación basica desea realizar? \n\t1.SUMA\n\t2.RESTA\n\t3.MULTIPLICACIÓN\n\t4.DIVISION"))
+if menu==1:
+    sum(numero_1,numero_2)
+elif menu==2:
+    rest(numero_1,numero_2)
+elif menu==3:
+    mult(numero_1,numero_2)
+elif menu==4:
+    div(numero_1,numero_2)

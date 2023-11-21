@@ -1,0 +1,119 @@
+using System;
+
+namespace P3_OPERACIONES_OUT
+{
+    class Program
+    {
+        static void Sumar(out int sumar)
+        {
+            //declarar variables
+            int num1 = 0, num2 = 0;
+            //leer datos
+            Console.Write("dame numero 1: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("dame numero 2: ");
+            num2 = int.Parse(Console.ReadLine());
+            sumar = num1 + num2;//realizar suma
+        }
+        static void Restar(out int restar)
+        {
+            //declarar variables
+            int num1 = 0, num2 = 0;
+            //leer datos
+            Console.Write("dame numero 1: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("dame numero 2: ");
+            num2 = int.Parse(Console.ReadLine());
+            restar = num1 + num2;//realizar suma
+        }
+        static void Multiplicar(out int multiplicar)
+        {
+            //declarar variables
+            int num1 = 0, num2 = 0;
+            //leer datos
+            Console.Write("dame numero 1: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("dame numero 2: ");
+            num2 = int.Parse(Console.ReadLine());
+            multiplicar = num1 + num2;//realizar suma
+        }
+        static void Dividir(out int dividir)
+        {
+            //declarar variables
+            int num1 = 0, num2 = 0;
+            //leer datos
+            Console.Write("dame numero 1: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("dame numero 2: ");
+            num2 = int.Parse(Console.ReadLine());
+            dividir = num1 + num2;//realizar suma
+        }
+        static void Main(string[] args)
+        {
+            //declarar variables
+            int sumar = 0,restar=0,dividir=0,multiplicar=0, opc=0;
+            do
+            {
+                do
+                {
+                    do
+                    {
+                        //ejecutar operaciones con metodos
+                        Console.WriteLine("Que operacion desea reaizar \n 1. suma \n 2. resta \n 3. multiplicación \n 4. división \n salir");
+                        opc = int.Parse(Console.ReadLine());
+                        Console.Clear();
+                        switch (opc)
+                        {
+                            case 1:
+                                {
+                                    //ejecutar metodo suma
+                                    Sumar(out sumar);
+                                    //imprimir 
+                                    Console.WriteLine("El Resultado De Su Suma Es: {0} ", sumar);
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    //ejecutar metodo suma
+                                    Restar(out restar);
+                                    //imprimir 
+                                    Console.WriteLine("El Resultado De Su Suma Es: {0} ", restar);
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    //ejecutar metodo suma
+                                    Multiplicar(out multiplicar);
+                                    //imprimir 
+                                    Console.WriteLine("El Resultado De Su Suma Es: {0} ", multiplicar);
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    //ejecutar metodo suma
+                                    Dividir(out dividir);
+                                    //imprimir 
+                                    Console.WriteLine("El Resultado De Su Suma Es: {0} ", dividir);
+                                    Console.ReadKey();
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    Console.Clear();
+                                    break;
+                                }
+                            default:
+                                {
+                                    Console.WriteLine("opcion no valida");
+                                    break;
+                                }
+                        }
+                    } while (opc == 1);
+                } while (opc == 2);
+            } while (opc == 3);    
+        }
+    }
+}

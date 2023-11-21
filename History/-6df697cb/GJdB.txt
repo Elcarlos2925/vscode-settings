@@ -1,0 +1,12 @@
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (23, &#39;Base de datos&#39;, &#39;77&#39;,&#39;megan&#39;, 67);
+INSERT 0 1
+postgres=# INSERT INTO libros (id, titulo, id_autor, editorial, año)
+VALUES (93, &#39;matematicas&#39;, &#39;90&#39;,&#39;megan&#39;, 88);
+INSERT 0 1
+postgres=# SELECT * FROM libros;
+////// Insertamos en la tabla autores
+postgres=# INSERT INTO autores (id, nombre)
+postgres-# VALUES (23,&#39;Juan&#39;);
+INSERT 0 1
+postgres=# INSERT INTO autores (id, nombre)

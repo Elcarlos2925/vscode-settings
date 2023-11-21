@@ -1,0 +1,32 @@
+using System;
+
+namespace P4_suma_return
+{
+    class Program
+    {
+        static int Suma()
+        { 
+            //declarar variables locales
+            int num1 = 0, num2=0, suma=0;
+            //leer datos
+            Console.Write("dame numero 1: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.Write("dame numero 2: ");
+            num2 = int.Parse(Console.ReadLine());
+            //realizar proceso de suma
+            suma = num1 + num2;
+
+            return suma;
+        }
+        static void Main(string[] args)
+        {
+            //declarar vriables globales
+            int Rsumar = 0;
+            //ejecutar el proceso de sumar
+            Rsumar = Suma ();
+            //imprimir resultados
+            Console.WriteLine("El resultado de suma es {0} ", Rsumar);
+            Console.ReadKey();
+        }
+    }
+}

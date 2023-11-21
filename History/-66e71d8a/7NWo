@@ -1,0 +1,20 @@
+
+from array import array
+import random
+class Ordenamiento_Burbuja(object):
+    def Burbuja(array):
+        #array=self.lista
+        length=len(array)-1
+        print(length)
+        for i in range(0,length):#puntero
+            print(array)
+            for j in range(0, length):#intercambio
+                if array[j] > array [j+1]:
+                    aux=array[j]
+                    array[j]=array[j+1]
+                    array[j+1]=aux
+        return array
+Lista=Ordenamiento_Burbuja()
+lista = [str(random.randint(0,100)) for i in range (20)]#LISTA PARA ALMACENAR 20 ELEMENTOS
+print(f"\t\t\t <<<LISTA DE ELEMENTOS>>>\n{lista}")#IMPRIMIR LISTA ALEATORIA
+print(Lista.Burbuja(lista))

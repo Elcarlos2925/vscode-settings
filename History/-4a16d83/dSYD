@@ -1,0 +1,23 @@
+class Tabla():
+    def __init__(self) :
+        self.v=0
+        self.t=(f"Tabla de {self.v}")
+    def calcular(self):
+        print=("1 * {self.v}")
+        print=("2 * {self.v}")
+        print=("3 * {self.v}")
+        print=("4 * {self.v}")
+        print=("5 * {self.v}")
+        print=("6 * {self.v}")
+        print=("7 * {self.v}")
+        print=("8 * {self.v}")
+        print=("9 * {self.v}")
+        print=("10 * {self.v}")
+
+#imprimir tablas
+
+tabla=Tabla()
+
+tabla.v=1
+print(tabla.t)
+tabla.calcular

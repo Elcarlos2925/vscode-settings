@@ -1,0 +1,91 @@
+class Tablas():
+    def __init__(self):
+        self.v=0
+        self.r=0
+        self.suma=0
+        self.t1clon=0
+    def calcular(self):
+        self.tx1=(1 * self.v)
+        self.tx2=(2 * self.v)
+        self.tx3=(3 * self.v)
+        self.tx4=(4 * self.v)
+        self.tx5=(5 * self.v)
+        self.tx6=(6 * self.v)
+        self.tx7=(7 * self.v)
+        self.tx8=(8 * self.v)
+        self.tx9=(9 * self.v)
+        self.tx10=(10 * self.v)
+        self.t1=[(self.tx1),self.tx2,self.tx3,self.tx4,self.tx5,self.tx6,self.tx7,self.tx8,self.tx9,self.tx10]
+# sumar todos los resultados
+tabla=Tablas()
+
+tabla.v=1
+print(f"Tabla del {tabla.v}")
+tabla.calcular()
+print(tabla.t1)
+#sumar array
+tabla.suma=tabla.t1[0] + tabla.t1[1] + tabla.t1[2] + tabla.t1[3] + tabla.t1[4] + tabla.t1[5] + tabla.t1[6] + tabla.t1[7] + tabla.t1[8] + tabla.t1[9]
+print(f"Suma de la tabla {tabla.v} = {tabla.suma}")
+#invertir array
+print([tabla.t1[9], tabla.t1[8], tabla.t1[7], tabla.t1[6], tabla.t1[5], tabla.t1[4], tabla.t1[3], tabla.t1[2], tabla.t1[1], tabla.t1[0]])
+#Extraer del 2 al 8
+print(tabla.t1[2:8])
+#clonar o copiar el array y multiplicar cada elemento de los array y escribirlo en un tercer array
+tabla.t1clon=tabla.t1
+print([tabla.t1clon])
+tabla.t1clon=tabla.t1clon[0] * tabla.t1clon[1] * tabla.t1clon[2] * tabla.t1clon[3] * tabla.t1clon[4] * tabla.t1clon[5] * tabla.t1clon[6] * tabla.t1clon[7] * tabla.t1clon[8] * tabla.t1clon[9]
+print(f"La multiplicación de la copia del array es= {tabla.t1clon}")
+
+
+print("\n")
+
+tabla.v=2
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=3
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=4
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=5
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=6
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=7
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=8
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=9
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+tabla.v=10
+print(f"Tabla del {tabla.v}\n")
+tabla.calcular()
+print(tabla.t1)
+
+
+
+
+
+

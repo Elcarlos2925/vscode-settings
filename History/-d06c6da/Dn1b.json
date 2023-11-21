@@ -1,0 +1,35 @@
+{
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "workbench.productIconTheme": "askjarvis-vscode-icons",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#9155FD",
+        "statusBar.noFolderBackground": "#73cfa8",
+        "statusBar.debuggingBackground": "#73cfa8",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff",
+        "editor.lineHighlightBackground": "#1073cf2d",
+        "editor.lineHighlightBorder": "#9fced11f"
+    },
+    "blockman.n01LineHeight": 0,
+    "editor.wordWrap": "off",
+    "diffEditor.wordWrap": "off",
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": false,
+    "editor.inlayHints.enabled": false,
+    "cSpell.userWords": [
+        "declarar"
+    ],
+    "workbench.editor.untitled.hint": "hidden",
+    "git.terminalAuthentication": false,
+    "editor.minimap.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 2,
+    "liveServer.settings.donotVerifyTags": true,
+    "files.autoSave": "afterDelay",
+    "editor.cursorBlinking": "expand",
+    "editor.linkedEditing": true,
+    "workbench.colorTheme": "Andromeda Bordered",
+    "workbench.iconTheme": "pop-icon-theme"
+}

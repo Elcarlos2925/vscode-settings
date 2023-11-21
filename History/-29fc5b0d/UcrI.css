@@ -1,0 +1,131 @@
+body{
+background-color: #EBE6DF;
+color: #EBE6DF;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.Forms-Login{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+    50deg,
+    rgba(74, 64,53, 1) 50%,
+    rgba(74, 64, 53, 0.7)),url('../img/5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 400px;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+.Forms-Login img{
+    text-align: center;
+}
+
+.Forms-Login h2{
+    color: #EBE6DF;
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.contraseña-contenedor input{
+    width: 88%;
+    background-color: #1E92E9;
+}
+
+label{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+input , textarea{
+    padding: 8px 6%;
+    background-color: #EBE6DF;
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #0000;
+}
+
+input:invalid{
+    color: red;
+    }
+
+    input:invalid:focus {
+        outline: 2px solid rgb(202, 33, 33);
+    }
+
+input:valid:focus{
+    outline: 2px solid #1E92E9;;
+}
+
+input , ::placeholder{
+    color: gray;
+}
+
+.btn{
+    background-color: #B1995C;
+    width: 150px;
+    align-self:center;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+.btn:hover{
+    background-color: #EBE6DF;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.Forms-Login #Logo{
+    width: 15%;
+}
+
+@media(max-width: 768px){
+    body{
+        padding: 30px;
+    }
+    .Forms-Login{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+.cambio-form{
+    color: #fff;
+    align-self:center;
+    margin-top: 20px;
+}
+
+.eye {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .eye::before {
+    content: "mostrar";
+    color: grey;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .eye.active::before {
+    content: "ocultar";
+    color: gray;
+  }

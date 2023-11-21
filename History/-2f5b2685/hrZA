@@ -1,0 +1,33 @@
+import random
+class Pila (object):
+    def __init__(self):
+        self.pila = []
+        self.p=0
+        self.tope=len(self.pila)
+        self.b=0
+    def push(self):
+        item = random.randint(1, 100)
+        self.pila.append(item)
+        print(f"el item insertado es: {item}")
+    def pop2(self):
+        if self.pila[self.b]==[]:
+            print(f"Pila vacia")
+        else:
+            self.pila.pop()
+    def peek(self):
+        if self.pila[0]==[]:
+            print(f"Pila vacia")
+        else:
+            print(f"El ultimo elemento insertado es: {self.pila[self.tope-1]}")
+    def read(self):
+        for item in self.pila:
+            print(f"Elemento de la pila: {item}")
+
+
+#pruebas
+p=Pila()
+for i in range(10):
+    p.push()
+
+p.peek()
+p.read()

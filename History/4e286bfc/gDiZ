@@ -1,0 +1,52 @@
+"""
+0 --->  5   last in first out ## LIFO 
+0 --->  4
+0 --->  3
+0 --->  2
+0 --->  1   first in last out ## FILO
+
+
+#"Ray"# , #"Jhon Wick"#, #"Tony Stark"#, #"Natasha Romanof"#, #"Bruce Banner"#, "Elena Banner"
+
+# pila.pop() -- Extraer Elementos de la pila
+# pila.push() -- Ingresar Elementos a la pila
+p 
+T "Elena Banner"    --->    "Bruce Banner"  last in first out ## LIFO 
+  "Natasha Romanof" --->  
+  "Tony Stark"      --->  
+  "Jhon Wick"       --->  
+B "Ray"             --->     first in last out ## FILO
+
+1. Declarar La Pila -- Esta puede ser un array(lista) con el numero de elementos
+   que se necesiten, generalmente las pilas almacenan un tipo de dato, algunas pueden
+   mezclar los tipos de datos
+
+2. Declara los punteros, Top, Button, Pointer, para controlar el flujo de la pila
+
+3. Crear los metodos Push, Pop, Peek, Read, Empty, para controlar el flujo de datos 
+   en la pila
+4. Ingresar y extraer datos de la pila, cumpliendo las reglas del funcionamiento
+"""
+      # 0  1  2  3  4 
+pila = [0, 0, 0, 0, 0] # Pila con 5 espacios para ingresar elementos numericos
+    #   b            t  
+    #   p
+b = 0
+p = 0
+t = len(pila)
+
+def push(element, p):
+    pila[p] = element
+
+
+import random
+
+for i in range(len(pila)):
+    element = random.randint(1, 100)
+    push(element, p)
+    p += 1
+
+
+
+print(pila)
+

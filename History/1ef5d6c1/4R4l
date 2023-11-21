@@ -1,0 +1,8 @@
+def sum (num1, num2):
+    suma=num1+num2
+    print(suma)
+
+
+numero_1=21
+numero_2=32
+sum(numero_1,numero_2)

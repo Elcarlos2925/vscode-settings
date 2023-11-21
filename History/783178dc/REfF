@@ -1,0 +1,81 @@
+using System;
+
+namespace P3_ARESMOC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //DECLARAR VARIABLES
+            int lado = 0, bas = 0, alt = 0, opc = 0, opc1 = 1;
+            do
+            {
+                // Menú opciones 
+                Console.WriteLine("Que area desea calcular: \n 1. Cuadrado \n 2. Triangulo \n 3. Rectangulo");
+                Console.Write("Opcion:");
+                opc = int.Parse(Console.ReadLine());
+                if (opc == 1)
+                { //leer datos
+                    Console.WriteLine("MEDIDAS");
+                    Console.Write("cuanto mide lado: ");
+                    lado = int.Parse(Console.ReadLine());
+                    MetodosAreas.AreaC(lado);
+                }
+                else if (opc == 2)
+                { //leer datos
+                    Console.WriteLine("MEDIDAS");
+                    Console.Write("cuanto mide altura: ");
+                    alt = int.Parse(Console.ReadLine());
+                    Console.Write("cuanto mide base: ");
+                    bas = int.Parse(Console.ReadLine());
+                    MetodosAreas.AreaT(bas, alt, 2);
+                }
+                else if (opc == 3)
+                { //leer datos
+                    Console.WriteLine("MEDIDAS");
+                    Console.Write("cuanto mide altura: ");
+                    alt = int.Parse(Console.ReadLine());
+                    Console.Write("cuanto mide base: ");
+                    bas = int.Parse(Console.ReadLine());
+                    MetodosAreas.AreaR(bas, alt);
+                }
+                else
+                { //leer opcion no valida
+                    Console.WriteLine("opcion no valida ");
+                    Console.ReadKey();
+                }
+                Console.Clear();
+                Console.WriteLine("Desea Calcular Otra Area:   1.si / 2.no");
+                opc1 = int.Parse(Console.ReadLine());
+                if (opc1 == 1)
+                {
+                    Console.Clear();
+                }
+            } while (opc1 == 1);
+        }
+        class MetodosAreas
+        {
+            public static void AreaC(int L)
+            {
+                int area = 0;//declarar area
+                area = L * 4;//calcular area
+                Console.WriteLine("El Area De Su Cuadrado Es {0}", area);
+                Console.ReadKey();
+            }
+            public static void AreaT(int b, int h, int div)
+            {
+                int area = 0;//declarar area
+                area = b * h / div;//calcular area
+                Console.WriteLine("El Area De Su Triangulo Es {0}", area);
+                Console.ReadKey();
+            }
+            public static void AreaR(int b, int h)
+            {
+                int area = 0;//declarar area
+                area = b * h;
+                Console.WriteLine("El Area De Su Rectangulo Es {0}", area);
+                Console.ReadKey();
+            }
+        }
+    }
+}

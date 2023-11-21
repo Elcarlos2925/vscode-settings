@@ -1,0 +1,10 @@
+.contenedor-carrito{
+    margin: 30px;
+    padding: 20;
+    border: 1px solid;
+    background-color: aqua;
+}
+
+.disabled{
+    display: none;
+}

@@ -1,0 +1,10 @@
+def sum (num1, num2):
+    suma=num1+num2
+    print(suma)
+
+
+numero_1=int(input("ingrese el valor asignado al numero 1: "))
+numero_2=int(input("ingrese el valor asignado al numero 2: "))
+
+
+sum(numero_1,numero_2)

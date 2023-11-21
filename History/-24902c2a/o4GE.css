@@ -1,0 +1,10 @@
+.carrito-vacio{
+    margin: 30px;
+    padding: 20;
+    border: 1px solid;
+    background-color: aqua;
+}
+
+.disabled, #carrito-vacio{
+    display: none;
+}

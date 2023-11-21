@@ -1,0 +1,30 @@
+class lista_simple(object):
+    def _init_(self):
+        self.raiz =None
+        self.cola =None
+
+        def add_node (self, nodo):
+        if self.raiz == None:
+            self.raiz = nodo
+        if self.cola!=None:
+            self.cola.link = nodo
+
+        self.cola = nodo
+
+    def read (self):  
+        p = self.raiz
+        while p != None:
+            print(p)
+            p = p.link
+
+
+import random
+
+data_choice = ["Alexis","Odette","Karla","Omar","Carlos","Azael","Caleb"]
+ls = lista_simple()
+
+for bans in data_choice:
+    node = Node(band)
+    ls.add_node(node)
+
+ls.read

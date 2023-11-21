@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-Coffee.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-logo">
+            <a href="../index.php"><img src="../img/Logo-White.png" alt="logo"></a>
+        </div>
+        <div class="nav-nombre">
+            <a href="../index.php"><h2>The Drop Coffee</h2></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.php">Inicio</a>
+                </li>
+                <li>
+                    <a href="../Coffee.php">Café</a>
+                </li>
+                <li>
+                    <a href="../Productos.php">Productos</a>
+                </li>
+                <li>
+                    <a href="../Recetas.php">Recetas</a> 
+
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="botones-izq">
+            <div class="btn-btn">
+                <a href="../Registro/index.php" class="btn"><button>Registrar</button></a>        
+            </div>
+            <div class="btn-car-shop">
+                <a href="../Carrito/index.php" class="car-shop"><button><img src="../img/carrito.png" width="auto" height="50%" alt="carrito nav-bar"><span id="numerito" class="numerito">0</span></button></a>
+            </div>
+        </div>
+
+        <a onclick="openNav()" class="menu" href="#"><button><img src="../img/menu.png" width="auto" height="50%" alt="3 barras horizontales"></button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()"  href="" class="close">&times;</a>
+            <div class="overlay-content">
+                    <a href="../index.php">Inicio</a>
+                    <a href="../Coffee.php">Café</a>
+                    <a href="../Productos.php">Productos</a>
+                    <a href="../Recetas.php">Recetas</a>
+                    <a href="../Registro/index.php">Registrar</a>
+                    <a href="../Carrito/index.php">Carrito</a>
+            </div>
+        </div>
+
+    </header>
+
+
+
+<div id="contenedor-producto-vista" class="contenedor-producto-vista">
+
+    <div class="fondo-contenedor-producto" id="fondo-contenedor-producto">            
+       <div class="carrusel-datos">
+
+            <div class="carrusel-btn">
+                <button class="anterior-producto">&#10094; </button>
+                <div class="carrusel-producto-completo">
+                    <div class="imagen-productos-completo">
+                        <img src="../img/CV1.png">
+                    </div>
+                    <div class="imagen-productos-completo">
+                        <img src="../img/CV2.png">
+                    </div>
+                    <div class="imagen-productos-completo">
+                        <img src="../img/CV3.png">
+                    </div>
+                </div>
+                <button class="siguiente-producto"> &#10095;</button>
+            </div>
+            
+            <div class="contenedor-datos-producto">
+                
+                <div class="titulo">
+                    Bolsa de Veracruz 300 g
+                </div>
+                <div class="calific-like-share">
+                    <div class="calificacion-contenedor">
+                        <div id="descripción-calificacion">
+                            Calificación:
+                        </div>
+                        <div id="cal-5btn">
+                            <div id="calificacion">
+                                <h5>
+                                    4.0
+                                </h5>
+                            </div>
+                            <div class="btn-calificacion">
+                                <button id="estrellas">
+                                    <i class="fas fa-coffee"></i>
+                                </button>
+                                <button id="estrellas">
+                                    <i class="fas fa-coffee"></i>
+                                </button>
+                                <button id="estrellas">
+                                    <i class="fas fa-coffee"></i>
+                                </button>
+                                <button id="estrellas">
+                                    <i class="fas fa-coffee"></i>
+                                </button>
+                                <button id="estrellas-deshabilitada">
+                                    <i class="fas fa-coffee"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like-share">
+                        <button class="like">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="share">
+                            <i class="fas fa-link"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="precio-mxn-completo">
+                    <div class="precio-completo">
+                        <h5 class="signo-dollar">
+                            $
+                        </h5>
+                        <h5>
+                            250.00
+                        </h5>
+                    </div>
+                    <div class="mxn-completo">
+                        <h5>
+                            MXN
+                        </h5>
+                    </div>
+                </div>
+                <div class="contenedor-cant-comp-addcar">
+                    <div class="cantidad-completo">
+                        <div class="centrar-cantidad-contenedor">
+                            <div class="cantidad-contenedor">
+
+                                <div id="left">
+                                    <button id="menos-completo">-</button>
+                                </div>
+                                
+                                <div id="label-cantidad">
+                                    <label for="cantidad" id="cantidad-completo">1</label>
+                                </div>
+                                
+                                <div id="right">
+                                    <button id="mas-completo">+</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="comprar-ahora">
+                        <button id="btn-comprar-ahora">
+                            <h5>Comprar Ahora</h5>
+                        </button>
+                    </div>
+                    <div class="add-to-car-completo">
+                        <button class="añadir-al-carrito" id="1">
+                            <img src="../img/carrito+.png" id="carritoplus" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <label for="">Talla: </label>
+
+            <input type="radio" id="s" name="Talla">
+            <input type="radio" id="m"name="Talla">
+            <input type="radio" id="l"name="Talla">
+            <input type="radio" id="xl" name="Talla">
+
+            <label for="s"  class="Talla" id="lbl-s">   S   </label>
+            <label for="m"  class="Talla" id="lbl-m">   M   </label>
+            <label for="l"  class="Talla" id="lbl-l">   L   </label>
+            <label for="xl" class="Talla" id="lbl-xl">  XL  </label>
+        </form>
+
+
+        <div class="barra-opciones">
+            <button  id="btn-descripcion" >
+                Descripción
+            </button>
+            <button id="btn-ingredientes">
+                Ingredientes
+            </button>
+            <button id="btn-instrucciones">
+                Instrucciones de uso
+            </button>
+            <button id="btn-comentarios">
+                Comentarios
+            </button>
+        </div>
+        <div class="contenido">
+            <h2 style="font-size: 20px;">Comentarios</h2><br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandra Torres García </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitada">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Excelente producto, llego muy bien empaquetado y tiene un sabor muy bueno.
+            <!--?Aqui pones el mensaje ahi si opupas espacios pues con <br>-->
+            
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Javier Rodríguez López </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Este café de Veracruz es riquísimo, super recomendado.
+
+            <h2 style="font-size: 20px;">Comentarios</h2><br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandra Torres García </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitada">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Excelente producto, llego muy bien empaquetado y tiene un sabor muy bueno.
+            <!--?Aqui pones el mensaje ahi si opupas espacios pues con <br>-->
+            
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Javier Rodríguez López </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Este café de Veracruz es riquísimo, super recomendado.
+        </div>
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Sofía García Vargas </strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café que compré superó mis expectativas, el aroma y el sabor son simplemente deliciosos. Definitivamente lo volveria a comprar  
+            </div>
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Mateo Rodríguez Navarro</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café tiene un sabor decente, aunque no me sorprendió mucho.
+            </div>
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valentina López Jiménez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café es bueno, aunque no lo consideraría mi favorito entre los que he probado
+            </div>
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandro Pérez Ramírez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El equipo detrás de este café se nota que se preocupa por la calidad, porque todo llego bastante bien empacado y el sabor del café es realmente bueno.
+            </div>
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Camila Fernández Ruiz</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+        El café es riquísimo, a mi familia le encanto.
+            </div>
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Daniel Martínez Gómez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La experiencia de compra fue fácil y conveniente, además, el café es de alta calidad. ¡Excelente combinación!. 
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Isabella Sánchez Castro</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            ¡Me encanta saber que al comprar este café estoy apoyando a pequeños productores! Sabe aún mejor sabiendo que es ético y delicioso.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Lucas Torres Herrera</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La entrega fue dentro del plazo esperado, sin problemas destacables.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Emma Díaz Moreno</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café cumplió con mis expectativas básicas en cuanto a calidad y frescura
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Nicolás Ruiz Silva</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Desde que descubrí este café, se ha convertido en mi favorito, no puedo dejar de recomendarlo.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Elena Vargas Montenegro</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café es una delicia, cada taza es un momento de placer aromático que disfruto al máximo en la comodidad de mi hogar. 
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Gabriel Soto Martell</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La frescura de su café es evidente desde el primer sorbo, siempre me sorprende gratamente.
+            </div>  
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valeria Ramírez Mendoza</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Me encanta la variedad de opciones que ofrecen, siempre encuentro algo nuevo para probar
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Sebastián Ríos Sánchez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El compromiso con la calidad es notorio, porque el producto viene muy bien cuidado y llego a tiempo
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Natalia Guzmán Espinoza</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La atención al cliente es excelente, siempre responden con amabilidad y rapidez.
+            </div>  
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Andrés Castro Herrera</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café es bueno, aunque no me impresionó de manera sobresaliente en sabor.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Isabella Fernández Díaz</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La presentación es adecuada, aunque no tiene detalles que destaquen en particular, sin embargo, el sabor es bueno.
+            </div>  
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Martín Bravo Jiménez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La experiencia de compra fue normal, sin aspectos sobresalientes que resaltar
+            </div>  
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Camila Torres Rojas</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El precio del café es justo, aunque no lo consideraría especialmente económico.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandro Mora Flores</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El tiempo de entrega fue estándar, sin mayores inconvenientes ni grandes sorpresas.
+            </div>  
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Lucía Herrera Rojas</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café es una delicia, cada taza es como un viaje sensorial que no deja de sorprenderme
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Martín Jiménez Gómez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La frescura es su sello distintivo, nunca decepciona en cuanto a calidad del café, excelente trabajo!!!
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Alejandra Martinez Flores</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La variedad de sabores disponibles es impresionante, siempre encuentro algo nuevo para experimentar y todos son realmente deliciosos
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valentina Sánchez Pérez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El compromiso con los productores locales se refleja en cada bolsa, es genial apoyar esa labor, súper recomendado el cafe!!!
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Nicolás Rodríguez Cruz</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La atención al cliente es siempre amable y atenta, una experiencia muy gratificante.
+            </div> 
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Isabella Martínez Moreno</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El sabor del café es satisfactorio, aunque podría tener un toque más distintivo.
+            </div> 
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Sebastián Flores Torres</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El empaque es funcional y esta realmente bonito, además, protege bien el producto.
+            </div> 
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Camila Díaz Vargas</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La experiencia de compra fue fluida, aunque podrían agregar más métodos de pago.
+            </div> 
+
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Mateo Castro Ramírez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El precio se ajusta a la calidad ofrecida, aunque podría haber alguna oferta ocasional
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Elena Mora Silva</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La entrega fue dentro del plazo estipulado, sin mayores contratiempos, bien ahí. 
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Andrés Guzmán Montenegro</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El café tiene un sabor decente, aunque me gustaría explorar más variedad en sus opciones.
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Isabella Paredes Muñozs</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La frescura del café es aceptable, aunque en ocasiones he notado una ligera fluctuación en la calidad.
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Sofía Morales Rivera</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            La gama de sabores disponibles es buena, aunque algunos podrían ser más intensos para mi gusto personal.
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Juan Cruz Ortega</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            Me encanta que tenga la opción descafeinada, muchas gracias!!!
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Valentina Castillo Herrera</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El servicio al cliente es eficiente, aunque en ocasiones me gustaría un contacto más personalizado.
+            </div> 
+
+            <br>
+            <br>
+            <div class="btn-calificacion-comentarios">
+                <br><strong class="nombre-usuario">Santiago Vega Gutiérrez</strong><!--?aqui le cambias el nombre-->
+                <button id="estrellas"><!--?segun el numero de estrellas ponle estrellas a las hablilitadas y estrellas-deshabilitadas pues a las que no en el id-->
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+                <button id="estrellas-deshabilitadas">
+                    <i class="fas fa-coffee"></i>
+                </button>
+            </div>
+            El empaque del producto es funcional, aunque no destaca en originalidad o diseño, ya que todos son muy similares.
+            </div> 
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="../js/Nav-Menu.js"></script>
+</html>
+<script src="../js/Productos-Vista.js"></script>    
+<script src="script.js"></script>
